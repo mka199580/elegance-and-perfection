@@ -21,12 +21,14 @@ collections:
             summary: "{{fields.brand}} - {{fields.name}}"
             fields:
               - { label: "Product Name", name: "name", widget: "string" }
+              - { label: "Arabic Product Name", name: "name_ar", widget: "string", required: false }
               - label: "Brand / Category"
                 name: "brand"
                 widget: "select"
                 options: ["Hermès", "Chanel", "Dior", "YSL", "LV", "Gucci", "Prada", "Fendi", "Celine", "Bottega Veneta", "Valentino", "Balenciaga", "Loewe", "Miu Miu", "Burberry", "Goyard"]
               - { label: "Price", name: "price", widget: "string", required: false, hint: "Example: KWD 120" }
               - { label: "Short Description", name: "description", widget: "string", required: false }
+              - { label: "Arabic Description", name: "description_ar", widget: "string", required: false }
               - { label: "Available", name: "available", widget: "boolean", default: true }
               - label: "Product Photos"
                 name: "images"

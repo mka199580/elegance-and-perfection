@@ -1,37 +1,7 @@
 {
   "products": [
-    {
-      "name": "Lady Dior ",
-      "brand": "Dior",
-      "price": "KWD 145",
-      "description": "XL large Tote - Black cannage 41.5x32x18",
-      "available": true,
-      "images": [
-        "/assets/uploads/img_0360.jpeg"
-      ]
-    },
-    {
-      "name": "Classic Flap Bag",
-      "brand": "Chanel",
-      "price": "KWD ___",
-      "description": "Quilted chain shoulder bag",
-      "available": true,
-      "images": [
-        "/assets/background.jpeg"
-      ]
-    },
-    {
-      "name": "Kelly Style Bag",
-      "brand": "Hermès",
-      "price": "KWD ___",
-      "description": "Structured top handle silhouette",
-      "available": true,
-      "images": [
-        "/assets/hero.png"
-      ]
-    },
-    {
-      "available": true
-    }
+    {"name":"Lady Dior Micro Bag","brand":"Dior","price":"KWD ___","description":"Black cannage top handle bag","available":true,"images":["/assets/hero.png"]},
+    {"name":"Classic Flap Bag","brand":"Chanel","price":"KWD ___","description":"Quilted chain shoulder bag","available":true,"images":["/assets/background.jpeg"]},
+    {"name":"Kelly Style Bag","brand":"Hermès","price":"KWD ___","description":"Structured top handle silhouette","available":true,"images":["/assets/hero.png"]}
   ]
 }
