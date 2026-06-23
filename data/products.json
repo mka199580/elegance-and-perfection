@@ -4,7 +4,7 @@
       "name": "Lady Dior",
       "brand": "Dior",
       "price": "KWD 150",
-      "description": "Black cannage top handle bag",
+      "description": "Black cannage top handle bag 41.5x32x18",
       "available": true,
       "images": [
         "/assets/uploads/img_0360.jpeg"
@@ -29,6 +29,15 @@
       "images": [
         "/assets/uploads/img_0402.jpeg"
       ]
+    },
+    {
+      "available": true,
+      "name": "Diorcamp Messenger Bag",
+      "description": "Dior Oblique Embroidered Canvas 28.5 × 25 × 12 cm",
+      "images": [
+        "/assets/uploads/img_0401.jpeg"
+      ],
+      "price": "KWD 150"
     }
   ]
 }
