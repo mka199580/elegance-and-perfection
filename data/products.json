@@ -37,7 +37,8 @@
       "images": [
         "/assets/uploads/img_0401.jpeg"
       ],
-      "price": "KWD 150"
+      "price": "KWD 150",
+      "brand": "Dior"
     },
     {
       "available": true,
