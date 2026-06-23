@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E&P Admin</title>
+<style>
+.lang-toggle{float:right;border:1px solid #d8cfc0;background:#fff;color:#222;border-radius:999px;padding:10px 14px;cursor:pointer} html[dir="rtl"] body{text-align:right} html[dir="rtl"] .lang-toggle{float:left}
+body{font-family:Arial,sans-serif;background:#f7f4ef;padding:30px}
+.wrap{max-width:700px;margin:auto;background:#fff;padding:25px;border-radius:20px}
+input,select,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #d8cfc0;border-radius:14px}
+button{padding:14px 22px;border:none;border-radius:14px;background:#1f8a4c;color:#fff;cursor:pointer}
+.preview{width:100%;height:300px;border:2px dashed #d8cfc0;display:flex;align-items:center;justify-content:center;margin-top:10px;overflow:hidden}
+.preview img{max-width:100%;max-height:100%}
+</style></head>
+<body>
+<div class="wrap">
+<button class="lang-toggle" id="langToggle" type="button">العربية</button>
+<h2 data-en="E&P Product Upload" data-ar="إضافة منتج في E&P">E&P Product Upload</h2>
+<input data-en-placeholder="Product Name" data-ar-placeholder="اسم المنتج" placeholder="Product Name">
+<select>
+        <option>Hermès</option>
+        <option>Chanel</option>
+        <option>Dior</option>
+        <option>YSL</option>
+        <option>Louis Vuitton</option>
+        <option>Gucci</option>
+        <option>Prada</option>
+        <option>Fendi</option>
+        <option>Celine</option>
+        <option>Bottega Veneta</option>
+        <option>Valentino</option>
+        <option>Balenciaga</option>
+        <option>Loewe</option>
+        <option>Miu Miu</option>
+        <option>Burberry</option>
+        <option>Goyard</option>
+      </select>
+<input data-en-placeholder="Price" data-ar-placeholder="السعر" placeholder="Price">
+<textarea data-en-placeholder="Description" data-ar-placeholder="الوصف" placeholder="Description"></textarea>
+<input type="file" id="img">
+<div class="preview" id="preview" data-en="Image Preview" data-ar="معاينة الصورة">Image Preview</div>
+<button data-en="Save Product" data-ar="حفظ المنتج">Save Product</button>
+<script>
+img.onchange=e=>{
+ const f=e.target.files[0];
+ if(!f)return;
+ const r=new FileReader();
+ r.onload=()=>preview.innerHTML='<img src="'+r.result+'">';
+ r.readAsDataURL(f);
+}
+
+const t=document.getElementById('langToggle');
+function adminLang(lang){document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';t.textContent=lang==='ar'?'English':'العربية';document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[lang]);document.querySelectorAll('[data-en-placeholder]').forEach(el=>el.placeholder=lang==='ar'?el.dataset.arPlaceholder:el.dataset.enPlaceholder);localStorage.setItem('ep_language',lang)}
+t?.addEventListener('click',()=>adminLang(document.documentElement.lang==='ar'?'en':'ar'));
+adminLang(localStorage.getItem('ep_language')||'en');
+</script>
+</div></body></html>
