@@ -74,11 +74,21 @@
       "available": true,
       "brand": "Dior",
       "name": "Small Dior Caro Bag",
-      "description": "Black Cannage Calfskin with Gold-Finish CD Clasp 20",
+      "description": "Black Cannage Calfskin with Gold-Finish CD Clasp 20x12x7",
       "images": [
         "/assets/uploads/img_0391.jpeg"
       ],
       "price": "KWD 128"
+    },
+    {
+      "available": true,
+      "name": "Neverfull MM",
+      "brand": "LV",
+      "description": "Damier Azur Canvas 31x28x14",
+      "images": [
+        "/assets/uploads/img_0404.jpeg"
+      ],
+      "price": "KWD 135"
     }
   ]
 }
