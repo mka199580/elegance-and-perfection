@@ -21,13 +21,13 @@
       ]
     },
     {
-      "name": "Kelly Style Bag",
-      "brand": "Hermès",
-      "price": "KWD ___",
-      "description": "Structured top handle silhouette",
+      "name": "Dior caro bucket pouch",
+      "brand": "Dior",
+      "price": "KWD 140",
+      "description": "macrocannage / braided-effect calfskin 28x14x10",
       "available": true,
       "images": [
-        "/assets/hero.png"
+        "/assets/uploads/img_0402.jpeg"
       ]
     }
   ]
