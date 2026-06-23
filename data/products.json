@@ -99,6 +99,16 @@
         "/assets/uploads/img_0407.jpeg"
       ],
       "price": "KWD 130"
+    },
+    {
+      "available": true,
+      "name": "Alma BB",
+      "brand": "LV",
+      "description": "Monogram Canvas with Natural Cowhide Trim 18x12x8",
+      "images": [
+        "/assets/uploads/img_0409.jpeg"
+      ],
+      "price": "KWD 135"
     }
   ]
 }
