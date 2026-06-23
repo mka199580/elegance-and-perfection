@@ -49,6 +49,16 @@
         "/assets/uploads/img_0400.jpeg"
       ],
       "brand": "Dior"
+    },
+    {
+      "available": true,
+      "name": "Dior Toujours Bag",
+      "brand": "Dior",
+      "description": "Black Macrocannage Calfskin 37 × 27 × 19 ",
+      "images": [
+        "/assets/uploads/img_0399.jpeg"
+      ],
+      "price": "KWD 145"
     }
   ]
 }
