@@ -38,6 +38,15 @@
         "/assets/uploads/img_0401.jpeg"
       ],
       "price": "KWD 150"
+    },
+    {
+      "available": true,
+      "description": "Black Grained Calfskin with Dior Oblique Strap 27x19x8",
+      "name": "Dior Bobby Bag",
+      "price": "KWD 135",
+      "images": [
+        "/assets/uploads/img_0400.jpeg"
+      ]
     }
   ]
 }
