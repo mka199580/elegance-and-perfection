@@ -69,6 +69,16 @@
         "/assets/uploads/img_0396.jpeg"
       ],
       "price": "KWD 128"
+    },
+    {
+      "available": true,
+      "brand": "Dior",
+      "name": "Small Dior Caro Bag",
+      "description": "Black Cannage Calfskin with Gold-Finish CD Clasp 20",
+      "images": [
+        "/assets/uploads/img_0391.jpeg"
+      ],
+      "price": "KWD 128"
     }
   ]
 }
