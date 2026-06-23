@@ -89,6 +89,16 @@
         "/assets/uploads/img_0404.jpeg"
       ],
       "price": "KWD 135"
+    },
+    {
+      "available": true,
+      "name": "Locky BB",
+      "description": "Monogram Canvas with Gold-Tone Hardware 19x15x7",
+      "brand": "LV",
+      "images": [
+        "/assets/uploads/img_0407.jpeg"
+      ],
+      "price": "KWD 130"
     }
   ]
 }
