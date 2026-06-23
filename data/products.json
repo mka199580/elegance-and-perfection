@@ -59,6 +59,16 @@
         "/assets/uploads/img_0399.jpeg"
       ],
       "price": "KWD 145"
+    },
+    {
+      "available": true,
+      "name": "Dior Bobby Bag",
+      "brand": "Dior",
+      "description": "Black Grained Calfskin 22×17×6 ",
+      "images": [
+        "/assets/uploads/img_0396.jpeg"
+      ],
+      "price": "KWD 128"
     }
   ]
 }
