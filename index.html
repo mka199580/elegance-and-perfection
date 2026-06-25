@@ -6,48 +6,54 @@
   <title>E&P — Curated Luxury Handbags</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="topbar">
-    <a class="logo" href="#home">E&P</a>
-    <nav>
-      <a href="#home" data-i18n="home">Home</a>
-      <a id="instagramLink" href="#" target="_blank" rel="noreferrer">Instagram</a>
-      <a id="tiktokLink" href="#" target="_blank" rel="noreferrer">TikTok</a>
-      <button id="langBtn" class="ghost" type="button">العربية</button>
-      <a href="admin.html" data-i18n="admin">Admin</a>
+    <a class="logo" href="#home" aria-label="E&P home">E&P</a>
+    <nav class="nav">
+      <a href="#home" data-i18n="navHome">Home</a>
+      <a id="igLink" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a id="ttLink" href="#" target="_blank" rel="noopener">TikTok</a>
+      <button id="langToggle" class="ghostBtn" type="button">العربية</button>
     </nav>
   </header>
 
   <main>
     <section id="home" class="hero">
-      <div class="heroMark">E&amp;P</div>
-      <p data-i18n="tagline">Curated Luxury Handbags</p>
-      <a href="#brands" class="underlineLink" data-i18n="explore">Explore Collection</a>
+      <div class="heroMark">E&P</div>
+      <p class="heroSub" data-i18n="heroSub">Curated luxury handbags</p>
+      <a class="heroCta" href="#brands" data-i18n="explore">Explore Collection</a>
     </section>
 
-    <section id="brands" class="brandDirectory">
-      <p class="eyebrow" data-i18n="brandIntro">A curated selection from the world’s most celebrated maisons.</p>
+    <section id="brands" class="brandDirectory sectionPad">
+      <p class="eyebrow" data-i18n="eyebrow">Explore by brand</p>
+      <h1 data-i18n="brandTitle">A curated selection from the world’s most celebrated maisons.</h1>
+      <p class="muted narrow" data-i18n="brandCopy">Start from the homepage, choose a brand, then return here anytime to browse another maison.</p>
       <div class="brandGrid" id="brandGrid"></div>
     </section>
 
-    <section id="brandView" class="brandView hidden">
-      <button class="backBtn" id="backHome" type="button" data-i18n="backHome">← Back to Home</button>
-      <h1 id="brandTitle"></h1>
-      <div id="productsGrid" class="productsGrid"></div>
+    <section id="brandView" class="brandView sectionPad hidden">
+      <button class="backBtn" id="backHome" type="button" data-i18n="backHome">← Back to home</button>
+      <p class="eyebrow" id="brandEyebrow">Maison</p>
+      <h2 id="brandTitle"></h2>
+      <div id="productWrap" class="productWrap"></div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div>
-      <strong>E&P</strong><br />
-      <span data-i18n="tagline">Curated Luxury Handbags</span><br />
+      <strong>E&P</strong><br>
+      <span data-i18n="footerLine">Curated Luxury Handbags</span><br>
       Kuwait
     </div>
-    <div><a id="footerInstagram" href="#" target="_blank" rel="noreferrer">Instagram</a> | <a id="footerTiktok" href="#" target="_blank" rel="noreferrer">TikTok</a></div>
-    <small>© 2026 E&P. All rights reserved.</small>
+    <div class="footerLinks">
+      <a id="footerIg" href="#" target="_blank" rel="noopener">Instagram</a>
+      <a id="footerTt" href="#" target="_blank" rel="noopener">TikTok</a>
+      <a href="admin.html">Admin</a>
+    </div>
+    <p>© 2026 E&P. All rights reserved.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
