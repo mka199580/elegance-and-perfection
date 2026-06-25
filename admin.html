@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E&P Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="adminBody">
+  <header class="topbar">
+    <a class="logo" href="index.html">E&P</a>
+    <nav><a href="index.html">View Site</a><button id="logoutBtn" class="ghost hidden" type="button">Logout</button></nav>
+  </header>
+
+  <main class="adminShell">
+    <section id="loginPanel" class="panel">
+      <p class="eyebrow">Private showroom access</p>
+      <h1>E&P Admin Login</h1>
+      <p class="muted">Sign in with the admin email you created in Supabase.</p>
+      <form id="loginForm" class="formGrid">
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button class="primary" type="submit">Login</button>
+      </form>
+      <p id="loginMsg" class="msg"></p>
+    </section>
+
+    <section id="adminPanel" class="panel hidden">
+      <p class="eyebrow">Product management</p>
+      <h1>E&P Admin</h1>
+      <form id="productForm" class="adminForm">
+        <select id="brand" required></select>
+        <input id="name" placeholder="Product name" required />
+        <input id="price" placeholder="Price e.g. 450 KWD" />
+        <input id="size" placeholder="Size / dimensions" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <textarea id="description_ar" placeholder="Arabic description"></textarea>
+        <input id="photos" type="file" accept="image/*" multiple />
+        <button class="primary" type="submit">Publish Product</button>
+      </form>
+      <p class="muted">Photos upload to Supabase Storage bucket: <strong>products</strong>.</p>
+      <div class="tableWrap"><table><thead><tr><th>Image</th><th>Name</th><th>Brand</th><th>Price</th><th>Views</th><th>Actions</th></tr></thead><tbody id="productRows"></tbody></table></div>
+      <p id="adminMsg" class="msg"></p>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E&P — Curated Luxury Handbags</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#home">E&P</a>
+    <nav>
+      <a href="#home" data-i18n="home">Home</a>
+      <a id="instagramLink" href="#" target="_blank" rel="noreferrer">Instagram</a>
+      <a id="tiktokLink" href="#" target="_blank" rel="noreferrer">TikTok</a>
+      <button id="langBtn" class="ghost" type="button">العربية</button>
+      <a href="admin.html" data-i18n="admin">Admin</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="heroMark">E&amp;P</div>
+      <p data-i18n="tagline">Curated Luxury Handbags</p>
+      <a href="#brands" class="underlineLink" data-i18n="explore">Explore Collection</a>
+    </section>
+
+    <section id="brands" class="brandDirectory">
+      <p class="eyebrow" data-i18n="brandIntro">A curated selection from the world’s most celebrated maisons.</p>
+      <div class="brandGrid" id="brandGrid"></div>
+    </section>
+
+    <section id="brandView" class="brandView hidden">
+      <button class="backBtn" id="backHome" type="button" data-i18n="backHome">← Back to Home</button>
+      <h1 id="brandTitle"></h1>
+      <div id="productsGrid" class="productsGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>E&P</strong><br />
+      <span data-i18n="tagline">Curated Luxury Handbags</span><br />
+      Kuwait
+    </div>
+    <div><a id="footerInstagram" href="#" target="_blank" rel="noreferrer">Instagram</a> | <a id="footerTiktok" href="#" target="_blank" rel="noreferrer">TikTok</a></div>
+    <small>© 2026 E&P. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
