@@ -1,1 +1,45 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>E&P Admin</title><link rel="stylesheet" href="style.css"></head><body class="admin-body"><main class="admin-shell"><section id="loginPanel" class="admin-card"><h1>E&P Admin</h1><p>Private product dashboard</p><input id="password" type="password" placeholder="Password"><button id="loginBtn" class="primary-btn">Login</button><small>Default password: EP2026. Change it in config.js.</small></section><section id="dashboard" class="admin-card hidden"><div class="admin-top"><div><h1>Product Dashboard</h1><p>Add handbags to the live collection.</p></div><button id="logoutBtn" class="ghost-btn">Logout</button></div><form id="productForm" class="admin-form"><select id="brand"></select><input id="name" placeholder="Product name" required><input id="size" placeholder="Size / dimensions"><input id="condition" placeholder="Condition"><input id="price" placeholder="Price or Inquire"><textarea id="description" placeholder="Description"></textarea><input id="image" type="file" accept="image/*"><button class="primary-btn" type="submit">Publish Product</button></form><div id="adminProducts" class="admin-products"></div></section></main><script src="config.js"></script><script src="admin.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E&P Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="admin-body">
+  <header class="site-header">
+    <a class="logo" href="index.html">E&amp;P</a>
+    <nav><a href="index.html">View Site</a><button id="logoutBtn" class="plain-btn hidden">Logout</button></nav>
+  </header>
+
+  <main class="admin-wrap">
+    <section id="loginPanel" class="admin-card">
+      <h1>Admin Login</h1>
+      <p class="muted">Sign in with the admin user created in Supabase Auth.</p>
+      <input id="email" type="email" placeholder="Email" autocomplete="email" />
+      <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+      <button id="loginBtn" class="dark-btn">Login</button>
+      <p id="loginMsg" class="status"></p>
+    </section>
+
+    <section id="adminPanel" class="admin-card hidden">
+      <h1>Publish Product</h1>
+      <select id="brand"></select>
+      <input id="name" placeholder="Product name" />
+      <textarea id="description" placeholder="Product description"></textarea>
+      <input id="price" placeholder="Price, e.g. 1,450 KD" />
+      <input id="size" placeholder="Size / dimensions (admin only optional)" />
+      <input id="condition" placeholder="Condition (admin only optional)" />
+      <input id="images" type="file" accept="image/*" multiple />
+      <button id="publishBtn" class="dark-btn">Publish Product</button>
+      <p id="adminMsg" class="status"></p>
+      <h2>Products</h2>
+      <div id="adminProducts" class="admin-products"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

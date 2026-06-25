@@ -3,69 +3,57 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elegance & Perfection | Curated Luxury Handbags</title>
-  <meta name="description" content="Elegance & Perfection — curated luxury handbags in Kuwait." />
-  <link rel="stylesheet" href="style.css" />
+  <title>Elegance & Perfection</title>
+  <meta name="description" content="Elegance & Perfection — curated luxury handbags." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <a class="logo" href="#home">E&amp;P</a>
     <nav>
-      <a href="#brands" data-i18n="navBrands">Brands</a>
-      <a href="#collection" data-i18n="navCollection">Collection</a>
-      <a href="admin.html" data-i18n="navAdmin">Admin</a>
-      <button id="langToggle" class="lang-btn">عربي</button>
+      <a href="#brands">Brands</a>
+      <a href="#collection">Collection</a>
+      <button id="langToggle" class="plain-btn">عربي</button>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content reveal">
-        <p class="eyebrow" data-i18n="eyebrow">Elegance & Perfection</p>
-        <h1 data-i18n="heroTitle">Curated Luxury Handbags</h1>
-        <p data-i18n="heroText">A quiet luxury showroom for iconic maisons, refined silhouettes, and timeless details.</p>
-        <a class="primary-btn" href="#brands" data-i18n="explore">Explore Collection</a>
+      <div class="hero-overlay">
+        <p class="eyebrow">Elegance &amp; Perfection</p>
+        <h1>Curated luxury handbags</h1>
+        <a class="hero-btn" href="#brands">Explore Brands</a>
       </div>
     </section>
 
-    <section class="section intro reveal">
-      <p class="section-kicker" data-i18n="introKicker">Private curation</p>
-      <h2 data-i18n="introTitle">Luxury pieces, selected with restraint.</h2>
-      <p data-i18n="introText">Browse by maison, view details, and inquire directly through WhatsApp.</p>
+    <section id="brands" class="section">
+      <p class="section-no">01</p>
+      <h2>Explore by brand</h2>
+      <p class="muted">Start from the homepage, choose a brand, then return here anytime to browse another maison.</p>
+      <div class="brand-grid" id="brandGrid"></div>
     </section>
 
-    <section id="brands" class="section reveal">
-      <div class="section-head">
-        <p class="section-kicker" data-i18n="brandsKicker">Explore by brand</p>
-        <h2 data-i18n="brandsTitle">Choose a maison</h2>
-      </div>
-      <div id="brandGrid" class="brand-grid"></div>
+    <section id="collection" class="section soft-section">
+      <p class="section-no">02</p>
+      <h2 id="collectionTitle">Collection</h2>
+      <div id="products" class="products"></div>
+      <p id="emptyState" class="muted center">No products added yet.</p>
+      <a class="back-home" href="#brands">Back to home</a>
     </section>
 
-    <section id="collection" class="section collection reveal">
-      <div class="section-head">
-        <p class="section-kicker" id="collectionKicker">Collection</p>
-        <h2 id="collectionTitle">All Pieces</h2>
-      </div>
-      <div id="productGrid" class="product-grid"></div>
-    </section>
-
-    <section class="section promise-grid reveal">
-      <article><span>01</span><h3 data-i18n="promise1Title">Authenticity First</h3><p data-i18n="promise1Text">Every item is presented with careful product details.</p></article>
-      <article><span>02</span><h3 data-i18n="promise2Title">Curated Taste</h3><p data-i18n="promise2Text">A clean luxury edit across the most requested maisons.</p></article>
-      <article><span>03</span><h3 data-i18n="promise3Title">Direct Inquiry</h3><p data-i18n="promise3Text">Ask about any piece instantly through WhatsApp.</p></article>
+    <section class="section promise">
+      <div><p class="section-no">03</p><h2>Authenticity First</h2><p class="muted">Every item is presented with careful product details, clear imagery, and direct WhatsApp inquiry.</p></div>
+      <a class="floating-wa" id="floatingWa" target="_blank" rel="noopener">WhatsApp</a>
     </section>
   </main>
 
   <footer class="footer">
-    <div>E&amp;P — Elegance &amp; Perfection</div>
-    <div class="socials"><a id="instagramLink" target="_blank" rel="noopener">Instagram</a><a id="tiktokLink" target="_blank" rel="noopener">TikTok</a></div>
+    <p>Elegance &amp; Perfection</p>
+    <div><a href="admin.html">Admin</a></div>
   </footer>
-  <a id="whatsappFloat" class="whatsapp-float" target="_blank" rel="noopener">WhatsApp</a>
 
-  <script src="config.js"></script>
-  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
